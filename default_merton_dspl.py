@@ -43,9 +43,6 @@ print("======================================================================")
 for di in range(len(dd)):
     d = dd[di]
     
-    Zdistr = sst.norm(loc = muZ, scale = sigmaZ)
-    nuAdelta = lam*np.mean(np.linalg.norm(Zdistr.rvs(size = [5000, d]), axis = -1) >= delta, dtype = np.float16)
-    
     def mu(t, x):
         return (mu0+sigma0**2/2+lam*(tf.exp(muZ+sigmaZ**2/2)-1-muZ))*x
     
@@ -53,7 +50,19 @@ for di in range(len(dd)):
         return sigma0*x
     
     def eta(t, x, z):
-        return np.expand_dims(x, 1)*(np.exp(z)-1)
+        return np.expand_dims(x, 1)*(np.exp(z)-1.0)
+    
+    distr = sst.norm(loc = mu0, scale = sigma0)
+    nuAdelta = lam*np.mean(np.linalg.norm(distr.rvs(size = [5000, d]), axis = -1) >= delta)
+    def Zdelta(size):
+        Z = distr.rvs(size = size)
+        if np.prod(Z.shape) > 0.0:
+            ind = np.linalg.norm(Z, axis = -1) < delta
+            while np.sum(ind) > 0.0:
+                Z[ind] = distr.rvs(size = [np.sum(ind), d])
+                ind = np.linalg.norm(Z, axis = -1) < delta
+                
+        return Z.astype(np.float32)
     
     hid_layer_size = [min(d, 2000)]
     
@@ -62,7 +71,7 @@ for di in range(len(dd)):
     fev = np.zeros([runs, 1])
     for ri in range(runs):
         b = time.time()
-        dspl = DSPL_model(T, N, M, d, x0, mu, sigmadiag, eta, Zdistr, M0, nuAdelta, f, g, hid_layer_size, activation, path)
+        dspl = DSPL_model(T, N, M, d, x0, mu, sigmadiag, eta, Zdelta, M0, nuAdelta, f, g, hid_layer_size, activation, path)
         _, sol[ri, 0], fev[ri, 0] = dspl.train(epochs, lr_rate, lr_bd)
         e = time.time()
         tms[ri, 0] = e-b

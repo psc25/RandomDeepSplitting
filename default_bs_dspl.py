@@ -48,10 +48,10 @@ for di in range(len(dd)):
     sol = np.zeros([runs, 1])
     tms = np.zeros([runs, 1])
     fev = np.zeros([runs, 1])
-    for ri in range(10):        
+    for ri in range(runs):        
         b = time.time()
         dspl = DSPL_model(T, N, M, d, x0, mu, sigmadiag, f, g, hid_layer_size, activation, path)
-        _, sol[ri, 0], fev[ri, 0] = dspl.train(epochs, lr_rate, lr_bd, print_details=True)
+        _, sol[ri, 0], fev[ri, 0] = dspl.train(epochs, lr_rate, lr_bd)
         e = time.time()
         tms[ri, 0] = e-b
         print("Deep Splitting performed for d = " + str(d) + ", run = " + str(ri+1) + "/" + str(runs) + ", in " + str(np.round(tms[ri, 0], 1)) + "s, with solution " + str(sol[ri, 0]))

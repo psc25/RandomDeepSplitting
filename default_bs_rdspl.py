@@ -38,22 +38,21 @@ for di in range(len(dd)):
         return sigma0*x
     
     hid_layer_size = min(d, 2000)
-    nu = 20.0
     
     sol = np.zeros([runs, 1])
     tms = np.zeros([runs, 1])
     fev = np.zeros([runs, 1])
     for ri in range(runs):         
         b = time.time()
-        rdspl = RDSPL_model(T, N, M, d, x0, mu, sigmadiag, f, g, hid_layer_size, activation, nu)
+        rdspl = RDSPL_model(T, N, M, d, x0, mu, sigmadiag, f, g, hid_layer_size, activation)
         _, sol[ri, 0], fev[ri, 0] = rdspl.train()
         e = time.time()
         tms[ri, 0] = e-b
         print("Random Deep Splitting performed for d = " + str(d) + ", run = " + str(ri+1) + "/" + str(runs) + ", in " + str(np.round(tms[ri, 0], 1)) + "s, with solution " + str(sol[ri, 0]))
         
-        np.savetxt(path + "rnd_sol_" + str(d) + ".csv", sol)
-        np.savetxt(path + "rnd_tms_" + str(d) + ".csv", tms)
-        np.savetxt(path + "rnd_fev_" + str(d) + ".csv", fev)
+    np.savetxt(path + "rnd_sol_" + str(d) + ".csv", sol)
+    np.savetxt(path + "rnd_tms_" + str(d) + ".csv", tms)
+    np.savetxt(path + "rnd_fev_" + str(d) + ".csv", fev)
 
 print("======================================================================")
 print("Random Deep Splitting solutions saved")

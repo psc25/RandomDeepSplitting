@@ -1,0 +1,20 @@
+10 & 25.3496 & \cellcolor{lightgray} 25.3606 & 25.3464 & 36.91 & \cellcolor{lightgray} 0.07 & 115.89 \\ 
+ & \textit{0.0866} & \cellcolor{lightgray} \textit{0.0725} & \textit{0.0224} & $3.98 \cdot 10^{5}$ & \cellcolor{lightgray} $1.57 \cdot 10^{5}$ & $2.45 \cdot 10^{9}$ \\ 
+\hline 
+50 & 23.7462 & \cellcolor{lightgray} 23.7667 & 23.7526 & 44.21 & \cellcolor{lightgray} 0.20 & 321.51 \\ 
+ & \textit{0.0694} & \cellcolor{lightgray} \textit{0.0515} & \textit{0.0239} & $1.99 \cdot 10^{6}$ & \cellcolor{lightgray} $7.20 \cdot 10^{5}$ & $1.13 \cdot 10^{10}$ \\ 
+\hline 
+100 & 23.1829 & \cellcolor{lightgray} 23.1973 & 23.1982 & 49.64 & \cellcolor{lightgray} 0.33 & 619.23 \\ 
+ & \textit{0.0708} & \cellcolor{lightgray} \textit{0.0410} & \textit{0.0157} & $4.02 \cdot 10^{6}$ & \cellcolor{lightgray} $1.42 \cdot 10^{6}$ & $2.24 \cdot 10^{10}$ \\ 
+\hline 
+500 & 22.0774 & \cellcolor{lightgray} 22.0723 & 22.0899 & 121.45 & \cellcolor{lightgray} 1.61 & 3022.03 \\ 
+ & \textit{0.0673} & \cellcolor{lightgray} \textit{0.0370} & \textit{0.0211} & $2.23 \cdot 10^{7}$ & \cellcolor{lightgray} $7.38 \cdot 10^{6}$ & $1.11 \cdot 10^{11}$ \\ 
+\hline 
+1000 & 21.6606 & \cellcolor{lightgray} 21.6815 & 21.6945 & 319.06 & \cellcolor{lightgray} 3.73 & 5894.59 \\ 
+ & \textit{0.0530} & \cellcolor{lightgray} \textit{0.0520} & \textit{0.0235} & $5.00 \cdot 10^{7}$ & \cellcolor{lightgray} $1.53 \cdot 10^{7}$ & $2.22 \cdot 10^{11}$ \\ 
+\hline 
+5000 & 20.8000 & \cellcolor{lightgray} 20.8193 & 20.8211 & 1783.06 & \cellcolor{lightgray} 15.99 & 30977.20 \\ 
+ & \textit{0.0616} & \cellcolor{lightgray} \textit{0.0507} & \textit{0.0102} & $3.05 \cdot 10^{8}$ & \cellcolor{lightgray} $8.02 \cdot 10^{7}$ & $1.11 \cdot 10^{12}$ \\ 
+\hline 
+10000 & 20.4759 & \cellcolor{lightgray} 20.4922 & 20.4966 & 3330.89 & \cellcolor{lightgray} 29.74 & 62182.71 \\ 
+ & \textit{0.0645} & \cellcolor{lightgray} \textit{0.0560} & \textit{0.0181} & $6.10 \cdot 10^{8}$ & \cellcolor{lightgray} $1.63 \cdot 10^{8}$ & $2.22 \cdot 10^{12}$

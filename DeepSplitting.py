@@ -55,7 +55,6 @@ class DSPL_model():
         for n in range(self.N-1, 0, -1):
             tf.reset_default_graph()
             yn, yn1 = self.sde(n)
-            print([np.mean(yn1), np.var(yn1)])
             mdl = self.NN_init()
             if n == self.N-1:
                 vn1 = self.g(yn1)

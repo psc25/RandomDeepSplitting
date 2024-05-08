@@ -3,7 +3,7 @@ import scipy.linalg as scl
 import time
 
 class RDSPL_model():
-    def __init__(self, T, N, M, d, x0, mu, sigmadiag, f, g, hid_layer_size, activation, nu):
+    def __init__(self, T, N, M, d, x0, mu, sigmadiag, f, g, hid_layer_size, activation):
         self.T = T
         self.N = N
         self.dt = T/N

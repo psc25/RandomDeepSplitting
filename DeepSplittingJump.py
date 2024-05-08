@@ -4,7 +4,7 @@ import time
 import os
 
 class DSPL_model():
-    def __init__(self, T, N, M, d, x0, mu, sigmadiag, eta, Zdistr, M0, nuAdelta, f, g, hid_layer_size, activation, path):
+    def __init__(self, T, N, M, d, x0, mu, sigmadiag, eta, Zdelta, M0, nuAdelta, f, g, hid_layer_size, activation, path):
         self.N = N
         self.dt = T/N
         self.M = M
@@ -13,7 +13,7 @@ class DSPL_model():
         self.mu = mu
         self.sigmadiag = sigmadiag
         self.eta = eta
-        self.Zdistr = Zdistr
+        self.Zdelta = Zdelta
         self.M0 = M0
         self.nuAdelta = nuAdelta
         self.f = f
@@ -29,20 +29,20 @@ class DSPL_model():
         y0 = self.x0*np.ones([self.M, self.d], dtype = np.float32)
         y1 = y0
         W = np.random.normal(size = [self.M, n+1, self.d], scale = np.sqrt(self.dt)).astype(dtype = np.float32)
-        P = np.random.poisson(size = (self.M, n+1, 1), lam = self.nuAdelta*self.dt).astype(dtype = np.int32)
+        P = np.random.poisson(size = [self.M, n+1, 1], lam = self.nuAdelta*self.dt).astype(dtype = np.int32)
         for t in range(n+1):
             drift = self.mu(t*self.dt, y0)*self.dt
             diffu = self.sigmadiag(t*self.dt, y0)*W[:, t]
             
             Pmax = np.max(P[:, t])
             if Pmax > 0:
-                Z = self.Zdistr.rvs(size = (self.M, Pmax, self.d)).astype(dtype = np.float32)
+                Z = self.Zdelta(size = [self.M, Pmax, self.d])
                 mask = np.tile(np.expand_dims(np.arange(1, Pmax+1), 0), (self.M, 1)) <= np.tile(P[:, t], (1, Pmax))
                 jump1 = np.sum(self.eta(t*self.dt, y0, Z)*np.expand_dims(mask, -1), axis = 1)
             else:
                 jump1 = np.zeros([self.M, self.d])
             
-            V = self.Zdistr.rvs(size = (1, self.M0, self.d)).astype(dtype = np.float32)
+            V = self.Zdelta(size = [1, self.M0, self.d])
             jump2 = self.dt*self.nuAdelta*np.mean(self.eta(t*self.dt, y0, V), axis = 1)
             
             y0 = y1
