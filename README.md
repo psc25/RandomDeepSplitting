@@ -2,5 +2,5 @@ Source code related to the article "Full Error Analysis of the Random Deep Split
 
 Link: https://arxiv.org/abs/2405.05192
 
-The numerical results for the reference solution via MLP algorithm can be found here:
+MLP results are from the article "Multilevel Picard approximation algorithm for semilinear partial integro-differential equations and its complexity analysis" by Ariel Neufeld and Sizhou Wu:
 https://github.com/psc25/MLPJumps (link to the paper: https://arxiv.org/abs/2205.09639)
