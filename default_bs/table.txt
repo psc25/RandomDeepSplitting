@@ -1,20 +1,20 @@
-10 & 25.5224 & \cellcolor{lightgray} 25.4464 & 25.4633 & 38.80 & \cellcolor{lightgray} 0.03 & 9.48 \\ 
- & \textit{0.0534} & \cellcolor{lightgray} \textit{0.0520} & \textit{0.0210} & $3.98 \cdot 10^{5}$ & \cellcolor{lightgray} $6.72 \cdot 10^{4}$ & $1.35 \cdot 10^{7}$ \\ 
+10 & \textcolor{MidnightBlue}{25.5224} & \textcolor{Maroon}{25.4464} & \textcolor{Black}{25.4633} & \textcolor{MidnightBlue}{38.80} & \textcolor{Maroon}{0.03} & \textcolor{Black}{9.48} \\ 
+ & \textcolor{MidnightBlue}{0.0534} & \textcolor{Maroon}{0.0520} & \textcolor{Black}{0.0210} & \textcolor{MidnightBlue}{$3.98 \cdot 10^{5}$} & \textcolor{Maroon}{$6.72 \cdot 10^{4}$} & \textcolor{Black}{$1.35 \cdot 10^{7}$} \\ 
 \hline 
-50 & 23.9589 & \cellcolor{lightgray} 23.8994 & 23.8985 & 45.46 & \cellcolor{lightgray} 0.03 & 10.53 \\ 
- & \textit{0.0292} & \cellcolor{lightgray} \textit{0.0350} & \textit{0.0189} & $1.99 \cdot 10^{6}$ & \cellcolor{lightgray} $3.10 \cdot 10^{5}$ & $5.77 \cdot 10^{7}$ \\ 
+50 & \textcolor{MidnightBlue}{23.9589} & \textcolor{Maroon}{23.8994} & \textcolor{Black}{23.8985} & \textcolor{MidnightBlue}{45.46} & \textcolor{Maroon}{0.03} & \textcolor{Black}{10.53} \\ 
+ & \textcolor{MidnightBlue}{0.0292} & \textcolor{Maroon}{0.0350} & \textcolor{Black}{0.0189} & \textcolor{MidnightBlue}{$1.99 \cdot 10^{6}$} & \textcolor{Maroon}{$3.10 \cdot 10^{5}$} & \textcolor{Black}{$5.77 \cdot 10^{7}$} \\ 
 \hline 
-100 & 23.3821 & \cellcolor{lightgray} 23.3233 & 23.3587 & 52.17 & \cellcolor{lightgray} 0.07 & 11.59 \\ 
- & \textit{0.0322} & \cellcolor{lightgray} \textit{0.0480} & \textit{0.0140} & $4.02 \cdot 10^{6}$ & \cellcolor{lightgray} $6.17 \cdot 10^{5}$ & $1.13 \cdot 10^{8}$ \\ 
+100 & \textcolor{MidnightBlue}{23.3821} & \textcolor{Maroon}{23.3233} & \textcolor{Black}{23.3587} & \textcolor{MidnightBlue}{52.17} & \textcolor{Maroon}{0.07} & \textcolor{Black}{11.59} \\ 
+ & \textcolor{MidnightBlue}{0.0322} & \textcolor{Maroon}{0.0480} & \textcolor{Black}{0.0140} & \textcolor{MidnightBlue}{$4.02 \cdot 10^{6}$} & \textcolor{Maroon}{$6.17 \cdot 10^{5}$} & \textcolor{Black}{$1.13 \cdot 10^{8}$} \\ 
 \hline 
-500 & 22.2624 & \cellcolor{lightgray} 22.3021 & 22.2800 & 125.13 & \cellcolor{lightgray} 0.54 & 21.89 \\ 
- & \textit{0.0520} & \cellcolor{lightgray} \textit{0.0351} & \textit{0.0106} & $2.23 \cdot 10^{7}$ & \cellcolor{lightgray} $3.26 \cdot 10^{6}$ & $5.55 \cdot 10^{8}$ \\ 
+500 & \textcolor{MidnightBlue}{22.2624} & \textcolor{Maroon}{22.3021} & \textcolor{Black}{22.2800} & \textcolor{MidnightBlue}{125.13} & \textcolor{Maroon}{0.54} & \textcolor{Black}{21.89} \\ 
+ & \textcolor{MidnightBlue}{0.0520} & \textcolor{Maroon}{0.0351} & \textcolor{Black}{0.0106} & \textcolor{MidnightBlue}{$2.23 \cdot 10^{7}$} & \textcolor{Maroon}{$3.26 \cdot 10^{6}$} & \textcolor{Black}{$5.55 \cdot 10^{8}$} \\ 
 \hline 
-1000 & 21.8595 & \cellcolor{lightgray} 21.8746 & 21.8822 & 301.72 & \cellcolor{lightgray} 1.39 & 34.73 \\ 
- & \textit{0.0402} & \cellcolor{lightgray} \textit{0.0259} & \textit{0.0141} & $5.00 \cdot 10^{7}$ & \cellcolor{lightgray} $7.01 \cdot 10^{6}$ & $1.11 \cdot 10^{9}$ \\ 
+1000 & \textcolor{MidnightBlue}{21.8595} & \textcolor{Maroon}{21.8746} & \textcolor{Black}{21.8822} & \textcolor{MidnightBlue}{301.72} & \textcolor{Maroon}{1.39} & \textcolor{Black}{34.73} \\ 
+ & \textcolor{MidnightBlue}{0.0402} & \textcolor{Maroon}{0.0259} & \textcolor{Black}{0.0141} & \textcolor{MidnightBlue}{$5.00 \cdot 10^{7}$} & \textcolor{Maroon}{$7.01 \cdot 10^{6}$} & \textcolor{Black}{$1.11 \cdot 10^{9}$} \\ 
 \hline 
-5000 & 21.0511 & \cellcolor{lightgray} 21.0381 & 21.0463 & 1785.30 & \cellcolor{lightgray} 5.58 & 130.62 \\ 
- & \textit{0.0468} & \cellcolor{lightgray} \textit{0.0231} & \textit{0.0090} & $3.05 \cdot 10^{8}$ & \cellcolor{lightgray} $4.00 \cdot 10^{7}$ & $5.53 \cdot 10^{9}$ \\ 
+5000 & \textcolor{MidnightBlue}{21.0511} & \textcolor{Maroon}{21.0381} & \textcolor{Black}{21.0463} & \textcolor{MidnightBlue}{1785.30} & \textcolor{Maroon}{5.58} & \textcolor{Black}{130.62} \\ 
+ & \textcolor{MidnightBlue}{0.0468} & \textcolor{Maroon}{0.0231} & \textcolor{Black}{0.0090} & \textcolor{MidnightBlue}{$3.05 \cdot 10^{8}$} & \textcolor{Maroon}{$4.00 \cdot 10^{7}$} & \textcolor{Black}{$5.53 \cdot 10^{9}$} \\ 
 \hline 
-10000 & 20.7160 & \cellcolor{lightgray} 20.7384 & 20.7260 & 3294.22 & \cellcolor{lightgray} 8.99 & 247.45 \\ 
- & \textit{0.0599} & \cellcolor{lightgray} \textit{0.0214} & \textit{0.0103} & $6.10 \cdot 10^{8}$ & \cellcolor{lightgray} $8.00 \cdot 10^{7}$ & $1.11 \cdot 10^{10}$
+10000 & \textcolor{MidnightBlue}{20.7160} & \textcolor{Maroon}{20.7384} & \textcolor{Black}{20.7260} & \textcolor{MidnightBlue}{3294.22} & \textcolor{Maroon}{8.99} & \textcolor{Black}{247.45} \\ 
+ & \textcolor{MidnightBlue}{0.0599} & \textcolor{Maroon}{0.0214} & \textcolor{Black}{0.0103} & \textcolor{MidnightBlue}{$6.10 \cdot 10^{8}$} & \textcolor{Maroon}{$8.00 \cdot 10^{7}$} & \textcolor{Black}{$1.11 \cdot 10^{10}$}
